@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="詰碁ボード" />
+  <title>詰碁ボード</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>詰碁ボード</h1>
+    <div class="size-select">
+      <label>路数
+        <select id="boardSize">
+          <option value="9">9</option>
+          <option value="13">13</option>
+          <option value="19" selected>19</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <div class="board-wrap">
+      <canvas id="board"></canvas>
+    </div>
+
+    <div class="toolbar" id="toolbar">
+      <div class="btn-row">
+        <button class="mode active" data-mode="alternate" id="altBtn">交互 次:黒</button>
+        <button class="mode" data-mode="black">黒を置く</button>
+        <button class="mode" data-mode="white">白を置く</button>
+        <button id="undoBtn">元に戻す</button>
+        <button class="mode" data-mode="erase">消す</button>
+        <button class="mode" data-mode="move">動かす</button>
+      </div>
+      <div class="btn-row">
+        <button id="cornerBtn">隅へ配置</button>
+        <button class="mode" data-mode="group">全体移動</button>
+        <button id="clearBtn">全消去</button>
+      </div>
+      <div class="status" id="status">黒 0 ・ 白 0</div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
