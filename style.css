@@ -114,3 +114,21 @@ main {
   color: var(--muted);
   font-size: 15px;
 }
+
+.privacy-note {
+  max-width: min(92vw, 78vh);
+  margin: 24px auto 12px;
+  padding: 0 8px;
+}
+
+.privacy-note p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: left;
+}
+
+.privacy-note a {
+  color: var(--muted);
+  text-decoration: underline;
+}

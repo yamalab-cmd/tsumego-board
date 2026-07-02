@@ -7,6 +7,14 @@
   <meta name="apple-mobile-web-app-title" content="詰碁ボード" />
   <title>詰碁ボード</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8WSY2RT96"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E8WSY2RT96');
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -44,6 +52,15 @@
       <div class="status" id="status">黒 0 ・ 白 0</div>
     </div>
   </main>
+
+  <footer class="privacy-note">
+    <p>
+      プライバシーについて：当サイトでは、サービス改善のためにGoogleアナリティクスを利用してアクセス状況を収集しています。
+      Googleアナリティクスは、トラフィックデータの収集のためにCookieを使用します。このデータは匿名で収集されており、
+      個人を特定するものではありません。収集を望まない場合は、お使いのブラウザの設定でCookieを無効にすることで拒否できます。
+      詳しくは<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Googleのプライバシーポリシー</a>をご確認ください。
+    </p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
